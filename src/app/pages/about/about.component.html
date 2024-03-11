@@ -1,0 +1,44 @@
+<div class="banner">
+    <h1>Sobre Nosotros</h1>
+</div>
+<div class="description">
+    <div class="present">
+        <h3>Objetivo</h3>
+        <p>El objetivo de DSP BIM es liderar la implementación y consultoría en tecnologías BIM y Revit, ofreciendo
+            soluciones innovadoras que mejoren la calidad y eficiencia de los proyectos arquitectónicos.</p>
+    </div>
+    <div class="present">
+        <h3>Misión</h3>
+        <p>Nuestra misión es proporcionar servicios de alta calidad en BIM y diseño arquitectónico con Revit, adaptados
+            a
+            las necesidades de nuestros clientes. Nos comprometemos a ser líderes en innovación, satisfaciendo las
+            expectativas del cliente y manteniendo la integridad profesional.</p>
+    </div>
+    <div class="present">
+        <h3>Visión</h3>
+        <p>Nuestra visión es ser el socio preferido para la implementación de tecnologías BIM a nivel global. Nos
+            esforzamos
+            por destacar en experiencia técnica, centrarnos en el cliente y ofrecer soluciones avanzadas que impulsen la
+            eficiencia y sostenibilidad en la industria de la construcción.</p>
+    </div>
+</div>
+
+<div class="about">
+
+    @for(member of members; track member){
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMiRJS5lTnLegkCzLJP396HqOuFdBY5p21BDPJimREA&s  "
+            alt="" />
+        <div class="content">
+            <div class="title">
+                <p class="job">{{member.job}}</p>
+                <h3>{{ member.name }}</h3>
+            </div>
+            <div class="buttons">
+                <a href="#" class="button">Conocer mas</a>
+            </div>
+        </div>
+    </div>
+    }
+
+</div>

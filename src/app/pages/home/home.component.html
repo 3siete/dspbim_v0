@@ -1,0 +1,57 @@
+<app-home-slider />
+
+<div class="content 1">
+    <div class="line"></div>
+    <div class="text">
+        <h3>Que es BIM?</h3>
+        <p>
+            BIM (Modelado de Información de Construcción) es una metodología de
+            trabajo que utiliza modelos digitales 3D para planificar, diseñar,
+            construir y administrar edificios e infraestructuras. Permite una
+            colaboración eficiente entre profesionales, mejora la precisión y optimiza
+            la gestión de proyectos de construcción.
+        </p>
+    </div>
+    <img src="../../../assets/content1.png" alt="Diseño de departamentos" />
+</div>
+
+<div class="content second">
+    <div class="line"></div>
+    <div class="text">
+        <h3>Nuestro Enfoque BIM</h3>
+        <p>
+            En DSP BIM, somos pioneros en ofrecer soluciones de Diseño BIM. Nuestro
+            equipo combina experiencia técnica y creatividad para transformar ideas en
+            realidad, asegurando eficiencia y precisión en cada proyecto.
+        </p>
+        <p>
+            Nos dedicamos a modelar, diseñar y optimizar espacios con la más avanzada
+            tecnología BIM.
+        </p>
+
+        <a href="#">Mas sobre nosotros</a>
+    </div>
+    <img src="../../../assets/carrucel3.png" alt="Diseño de departamentos" />
+</div>
+
+<div class="services-conteiner">
+    <div class="services">
+        @for(service of services; track service; ){
+        <div class="card-container">
+            <div class="card">
+                <div class="front-content">
+                    <div class="service">
+                        <p>Servicio</p>
+                        <p>{{ service.number }}</p>
+                    </div>
+                    <img src="../../../assets/services.png" alt="" />
+                </div>
+                <div class="content">
+                    <p class="heading">{{ service.name }}</p>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

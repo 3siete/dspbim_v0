@@ -1,0 +1,118 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/carrucel3.png) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    height: 501px;
+}
+
+.description .present {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.description .present h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+
+.description .present p {
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    padding: 40px;
+    margin: 30px 50px 0 50px;
+    font-size: 20px;
+}
+
+
+
+/*MEMBERS*/
+.about {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    margin: 20px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.card .content {
+    margin: 5px;
+}
+
+.card .content .title {
+    padding: 5px 20px 0 20px;
+}
+
+.card .content .title h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: end;
+}
+
+/*En tu hoja de estilos */
+a:link,
+a:visited,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/*botenes*/
+.button {
+    font-size: 13px;
+    font-weight: 700;
+    width: 115px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid var(--contrast-color);
+    padding: 8px 12px;
+    margin-right: 5px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.button:active {
+    color: var(--secondary-color);
+    box-shadow: 0 0.1rem var(--contrast-color);
+    transform: translateY(0.2rem);
+}

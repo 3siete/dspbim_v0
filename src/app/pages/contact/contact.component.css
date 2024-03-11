@@ -1,0 +1,188 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/carrucel3.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 6rem 0 0 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.contact-form .first-container {
+    background: #292929;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form .first-container .info-container {
+    padding: 10px;
+}
+
+.contact-form .first-container .info-container .title {
+    margin-bottom: 40px;
+}
+
+.contact-form .first-container .info-container h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.contact-form .first-container .info-container p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.contact-form .first-container .info-container div p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.second-container {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    margin: 20px;
+}
+
+.form-group .group {
+    width: 50%;
+}
+
+.group {
+    margin: 40px;
+}
+
+@media screen and (max-width: 1628px) {
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-form {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form>* {
+        width: 100%;
+    }
+
+    .contact-form .first-container {
+        padding: 40px 0;
+    }
+}
+
+/*INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT-INPUT*/
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #000;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #000;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
