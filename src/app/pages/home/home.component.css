@@ -23,7 +23,7 @@
 }
 
 .content .text {
-    max-width: 266px;
+    max-width: 350px;
 }
 
 .content .text h3 {
@@ -40,12 +40,19 @@
     margin-bottom: 30px;
 }
 
-.content a {
+.content .text li {
+
+    list-style: circle;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+a {
     font-size: 20px;
     font-weight: 400;
-    opacity: 0;
-    animation: showcontent 1s ease-in-out 1 forwards;
     color: gray;
+    z-index: 88888;
+    cursor: pointer;
 }
 
 .content img {
@@ -131,6 +138,7 @@
     color: #98694c;
 }
 
+
 .card .content {
     position: absolute;
     top: -30px;
@@ -148,10 +156,10 @@
     padding: 20px;
     line-height: 1.5;
     border-radius: 5px;
-    pointer-events: none;
-    transform: translatex(95%);
+    transform: translateX(95%);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 
 .card .content .heading {
     font-size: 32px;
@@ -161,6 +169,14 @@
 .card:hover .content {
     transform: translateY(0);
 }
+
+.service-link {
+    list-style: none;
+    z-index: 22222;
+    color: #98694c;
+    cursor: pointer;
+}
+
 
 .card:hover .front-content {
     transform: translateX(20%);

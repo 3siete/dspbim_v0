@@ -1,0 +1,29 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/carrucel1.jpg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.services-container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.benefits {}

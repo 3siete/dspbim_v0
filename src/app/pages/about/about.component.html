@@ -1,44 +1,106 @@
 <div class="banner">
     <h1>Sobre Nosotros</h1>
 </div>
-<div class="description">
-    <div class="present">
-        <h3>Objetivo</h3>
-        <p>El objetivo de DSP BIM es liderar la implementación y consultoría en tecnologías BIM y Revit, ofreciendo
-            soluciones innovadoras que mejoren la calidad y eficiencia de los proyectos arquitectónicos.</p>
-    </div>
-    <div class="present">
-        <h3>Misión</h3>
-        <p>Nuestra misión es proporcionar servicios de alta calidad en BIM y diseño arquitectónico con Revit, adaptados
-            a
-            las necesidades de nuestros clientes. Nos comprometemos a ser líderes en innovación, satisfaciendo las
-            expectativas del cliente y manteniendo la integridad profesional.</p>
-    </div>
-    <div class="present">
-        <h3>Visión</h3>
-        <p>Nuestra visión es ser el socio preferido para la implementación de tecnologías BIM a nivel global. Nos
-            esforzamos
-            por destacar en experiencia técnica, centrarnos en el cliente y ofrecer soluciones avanzadas que impulsen la
-            eficiencia y sostenibilidad en la industria de la construcción.</p>
-    </div>
-</div>
 
-<div class="about">
-
-    @for(member of members; track member){
-    <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMiRJS5lTnLegkCzLJP396HqOuFdBY5p21BDPJimREA&s  "
-            alt="" />
-        <div class="content">
-            <div class="title">
-                <p class="job">{{member.job}}</p>
-                <h3>{{ member.name }}</h3>
+<div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="face back">
+                <div class="content">
+                    <span class="stars"></span>
+                    <p class="desc">
+                        El objetivo de DSP BIM es liderar la implementación y consultoría en tecnologías BIM y Revit,
+                        ofreciendo
+                        soluciones innovadoras que mejoren la calidad y eficiencia de los proyectos arquitectónicos.
+                    </p>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="#" class="button">Conocer mas</a>
+            <div class="face front">
+                <b>Objetivo</b>
             </div>
         </div>
     </div>
-    }
+    <div class="card-container">
+        <div class="card">
+            <div class="face back">
+                <div class="content">
+                    <span class="stars"></span>
+                    <p class="desc">
+                        Nuestra misión es proporcionar servicios de alta calidad en BIM y diseño arquitectónico con
+                        Revit, adaptados
+                        a
+                        las necesidades de nuestros clientes.
+                        <br>
+                        Nos comprometemos a ser líderes en innovación,
+                        satisfaciendo las
+                        expectativas del cliente y manteniendo la integridad profesional.
+                    </p>
+                </div>
+            </div>
+            <div class="face front">
+                <b>Misión</b>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="face back">
+                <div class="content">
+                    <span class="stars"></span>
+                    <p class="desc">
+                        Nuestra visión es ser el socio preferido para la implementación de tecnologías BIM a nivel
+                        global.
+                        <br>
+                        Nos esforzamos
+                        por destacar en experiencia técnica, centrarnos en el cliente y ofrecer soluciones avanzadas que
+                        impulsen la
+                        eficiencia y sostenibilidad en la industria de la construcción.
+                    </p>
+                </div>
+            </div>
+            <div class="face front">
+                <b>Visión</b>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+
+-->
+<!--KJDSALKFJLASKDJFLKAJSDF-->
+<div class="about">
+    <div class="slides">
+        <div class="slide" [ngClass]=" {
+            transition: 'opacity ' + animationSpeed + 'ms ease-in-out' }">
+            @for(slide of slides;track slides || $index ;){
+            <div class="slide-col" [ngClass]=" {
+                    active: $index == currentSlide,
+                    transition: 'opacity ' + animationSpeed + 'ms ease-in-out' }">
+                <div class="user-text">
+                    <h3>{{ slide.name }}</h3>
+                    <p>{{ slide.job }}</p><br>
+                    <p>{{ slide.text }}</p>
+                </div>
+                <div class="user-img">
+                    <img [src]="slide.imgURL" alt="">
+                </div>
+            </div>
+            }
+        </div>
+        @if (indicatorsVisible) {
+        <div id="indicators">
+            @for(slide of slides; track $index; ){
+            <div (click)="jumpToSlide($index)" class="indicator" [ngClass]="{ active: $index == currentSlide }">
+            </div>
+            }
+        </div>
+        }
+        <button (click)="next()" class="nextButton">
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </button>
+        <button (click)="previous()" class="previousButton">
+            <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </button>
+    </div>
 </div>
