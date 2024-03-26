@@ -1,7 +1,7 @@
 .banner {
     height: 100dvh;
     position: relative;
-    background: url(../../../assets/carrucel3.png) no-repeat center;
+    background: url(../../../assets/carrucel3.jpg) no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     width: 90%;
     height: 80%;
     display: flex;
-    background: rgba(255, 255, 255, 0.7);
+    background: #F2E9DF;
     margin: 6rem 0 0 0;
     border-radius: 10px;
     padding: 5px;

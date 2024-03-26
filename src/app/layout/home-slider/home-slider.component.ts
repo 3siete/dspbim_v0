@@ -1,39 +1,42 @@
 import { Component } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID, Inject } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-slider',
   standalone: true,
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './home-slider.component.html',
-  styleUrl: './home-slider.component.css'
+  styleUrl: './home-slider.component.css',
 })
-
 export class HomeSliderComponent {
+  faArrowRight = faArrowRight;
+  faArrowLeft = faArrowLeft;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
-      if (isPlatformBrowser(this.platformId)) {
-          document.getElementById('next')?.addEventListener('click', () => {
-              const lists = document.querySelectorAll('.item');
-              const slide = document.getElementById('slide');
-  
-              if (slide) {
-                  slide.appendChild(lists[0]);
-              }
-          });
-  
-          document.getElementById('prev')?.addEventListener('click', () => {
-              const lists = document.querySelectorAll('.item');
-              const slide = document.getElementById('slide');
-  
-              if (slide) {
-                  slide.prepend(lists[lists.length - 1]);
-              }
-          });
-      }
+    if (isPlatformBrowser(this.platformId)) {
+      document.getElementById('next')?.addEventListener('click', () => {
+        const lists = document.querySelectorAll('.item');
+        const slide = document.getElementById('slide');
+
+        if (slide) {
+          slide.appendChild(lists[0]);
+        }
+      });
+
+      document.getElementById('prev')?.addEventListener('click', () => {
+        const lists = document.querySelectorAll('.item');
+        const slide = document.getElementById('slide');
+
+        if (slide) {
+          slide.prepend(lists[lists.length - 1]);
+        }
+      });
+    }
   }
 }
