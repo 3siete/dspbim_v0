@@ -1,3 +1,8 @@
+.arquitectura {
+    color: #767676;
+    font-size: 1.1rem;
+}
+
 .banner {
     max-width: 100%;
     min-height: 100dvh;
@@ -8,7 +13,7 @@
 .title {
     position: absolute;
     top: 30%;
-    left: 15rem;
+    left: 13.4rem;
     z-index: 1000;
 }
 

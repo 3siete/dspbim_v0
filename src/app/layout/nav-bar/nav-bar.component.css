@@ -27,13 +27,17 @@
     max-width: 80%;
 }
 
+.navbar {
+    margin-left: 6rem;
+}
+
 .navbar a {
     position: relative;
     font-size: 1.6rem;
     color: #fff;
     font-weight: 200;
     text-decoration: none;
-    margin-left: 3rem;
+    margin-left: 6rem;
 }
 
 .navbar a::after {
