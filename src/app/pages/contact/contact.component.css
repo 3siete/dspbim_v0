@@ -186,3 +186,57 @@ label {
         background: transparent;
     }
 }
+
+.link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .fa {
+        font-size: 28px;
+        margin-right: 8px;
+        color: #000;
+    }
+}
+
+
+/*ddd*/
+.dropdown {
+    display: flex;
+}
+
+
+
+#selectService option {
+    font-size: 14px;
+    padding: 5px 10px;
+    /* Padding horizontal y vertical */
+}
+
+#selectService option:hover {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+#selectService option:checked {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
