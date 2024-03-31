@@ -140,18 +140,29 @@
 }
 
 @media screen and (max-width: 767px) {
+    .boxesContainer {
+        display: block;
+        /* Cambio a display block para apilar los elementos */
+    }
+
     .cardBox {
-        margin-left: 2.8%;
-        margin-top: 3%;
-        width: 46%;
+        width: 94%;
+        /* Ajusta este valor según necesites */
+        margin: 10px auto;
+        /* Centra las tarjetas y añade un poco de margen entre ellas */
+        float: none;
+        /* Anula el float de los .cardBox */
     }
 
     .card {
         height: 285px;
+        /* Puedes ajustar la altura según necesites */
     }
 
+    /* Elimina margin-bottom del último .cardBox si es necesario */
     .cardBox:last-child {
-        margin-bottom: 3%;
+        margin-bottom: 10px;
+        /* Ajusta según necesites */
     }
 }
 
