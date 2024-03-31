@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID, Inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-slider',
@@ -13,8 +16,8 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './home-slider.component.css',
 })
 export class HomeSliderComponent {
-  faArrowRight = faArrowRight;
-  faArrowLeft = faArrowLeft;
+  faArrowRight = faChevronRight;
+  faArrowLeft = faChevronLeft;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
