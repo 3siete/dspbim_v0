@@ -14,23 +14,34 @@
     color: #fff;
 }
 
-li {
-    list-style: none;
-}
 
 h3 {
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+li {
+    list-style: none;
     font-size: 20px;
 }
 
 p {
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
     max-width: 50rem;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
 }
+
 
 .services-container {
     width: 100%;
     margin-top: 40px;
 }
+
 
 .name {
     display: flex;
@@ -38,32 +49,26 @@ p {
 
 }
 
-.name p {
-    max-width: 50px;
-}
-
 .name .line {
     content: "";
     left: 60px;
-    width: 30rem;
+    width: 25rem;
     height: 2px;
     background-color: #292929;
     border-radius: 5px;
 }
 
-.name .spacer {
-    width: 30rem;
+.spacer {
+    width: 25rem;
 }
 
 
 .benefits {
     margin: 30px 0 30px 0;
-    text-align: center;
 }
 
 .offers {
     margin: 30px 0 30px 0;
-    text-align: center;
 }
 
 .processes {
@@ -79,7 +84,7 @@ p {
 .content {
     margin: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .content li {

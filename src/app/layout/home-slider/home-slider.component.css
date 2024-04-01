@@ -151,8 +151,6 @@ main {
 
 
 @media (min-width: 651px) and (max-width: 1024px) {
-
-
     .title {
         display: flex;
         position: absolute;
