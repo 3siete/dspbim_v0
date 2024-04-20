@@ -26,6 +26,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'proyectos',
+    loadComponent: () =>
+      import('./pages/proyectos/proyectos.component').then(
+        (c) => c.ProyectosComponent
+      ),
+  },
+  {
     path: '##',
     redirectTo: '',
     pathMatch: 'full',
