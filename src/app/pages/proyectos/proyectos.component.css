@@ -19,11 +19,35 @@
 
 
 /* Estilos base para las tarjetas */
-.card {
+.card-body {
+    position: relative;
     height: 400px;
     margin: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-title {
+    position: relative;
+    /* Hace que el texto aparezca sobre la imagen */
+    z-index: 1;
+}
+
+.card-text {
+    position: relative;
+    /* Hace que el texto aparezca sobre la imagen */
+    z-index: 1;
+}
+
+.card-img-top {
+    width: 100%;
+    /* Asegúrate de que la imagen se estire para cubrir todo el ancho */
+    height: auto;
+    /* Mantén la proporción de aspecto de la imagen */
+    position: absolute;
+    /* Posición absoluta */
+    z-index: -1;
+    /* Pone la imagen detrás del texto */
 }
 
 /* Efecto al pasar el mouse */

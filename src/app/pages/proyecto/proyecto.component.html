@@ -1,0 +1,21 @@
+<div class="fondo">
+    <div class="project-detail-container">
+        <div class="project-image">
+            <img [src]="proyecto.imagenUrl" alt="{{ proyecto.nombre }}">
+        </div>
+        <div class="project-info">
+            <!-- Añade la clase para animación aquí -->
+            <div class="content-animation project-info-content" [ngClass]="{'content-hidden': contentHidden}">
+                <h2>{{ tituloActual }}</h2>
+                <div class="project-description">
+                    <p>{{ contenidoActual }}</p>
+                </div>
+            </div>
+            <div class="project-navigation">
+                <a (click)="cambiarContenido()">
+                    <i class="fa-solid fa-right-long"></i> <!-- Utiliza Font Awesome o una imagen -->
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

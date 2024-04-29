@@ -33,6 +33,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'proyecto/:id',
+    loadComponent: () =>
+      import('./pages/proyecto/proyecto.component').then(
+        (m) => m.ProyectoComponent
+      ),
+  },
+  {
     path: '##',
     redirectTo: '',
     pathMatch: 'full',
