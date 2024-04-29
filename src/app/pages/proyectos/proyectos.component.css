@@ -19,7 +19,7 @@
 
 
 /* Estilos base para las tarjetas */
-.card {
+.card-body {
     position: relative;
     height: 400px;
     margin: 0.5rem;

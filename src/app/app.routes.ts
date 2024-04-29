@@ -33,10 +33,10 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'proyecto',
+    path: 'proyecto/:id',
     loadComponent: () =>
       import('./pages/proyecto/proyecto.component').then(
-        (c) => c.ProyectoComponent
+        (m) => m.ProyectoComponent
       ),
   },
   {
