@@ -1,0 +1,79 @@
+<div class="banner">
+    <h1>BIM arquitectónico</h1>
+</div>
+
+
+<div class="contenedor-tarjetas">
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta" #tarjeta1 (click)="toggleInfo(tarjeta1)">
+        <div class="contenido-texto">
+            <h2>Cuales son los Beneficios de Implementar una BIM Arquitectonico en tus Proyectos</h2>
+            <p class="descripcion-breve">Implementar BIM arquitectónico en los proyectos trae varios beneficios.</p>
+            <div class="informacion-adicional">
+                <p>Permite una mejor visualización en 3D, lo que facilita la comunicación de ideas y reduce
+                    malentendidos. Mejora la coordinación entre diferentes disciplinas, reduciendo errores y costos.
+                    También facilita la detección temprana de conflictos de diseño, permitiendo solucionarlos antes de
+                    la construcción. Además, el análisis de datos integrado permite optimizar el uso de materiales y
+                    recursos, contribuyendo a una construcción más eficiente y sostenible.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta" #tarjeta2 (click)="toggleInfo(tarjeta2)">
+        <div class="contenido-texto">
+            <h2>Lo que ofrecemos</h2>
+            <p class="descripcion-breve">Ofrecemos un modelo arquitectónico de
+                Revit 3D rico en datos basado en el alcance
+                requerido del proyecto, el nivel de detalle,
+                los estándares BIM, el plan de ejecución BIM
+                (BEP) y los contratos BIM.</p>
+            <div class="informacion-adicional">
+                <p>Nuestros servicios de arquitectura BIM
+                    incluyen</p>
+                <ul>
+                    <li>Modelado arquitectónico 3D</li>
+                    <li>Servicios de dibujo arquitectónico</li>
+                    <li>Creación de familia Revit</li>
+                    <li>Coordinación BIM Arquitectónica</li>
+                    <li>Representación 3D arquitectónica</li>
+                    <li>Soporte BIM arquitectónico</li>
+                    <li>Conversión de CAD a modelo
+                        arquitectónico</li>
+                    <li>Escanear a modelado BIM * Solo para
+                        algunas regiones de Argentina.</li>
+                </ul>
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta" #tarjeta3 (click)="toggleInfo(tarjeta3)">
+        <div class="contenido-texto">
+            <h2>Procesos de trabajo</h2>
+            <p class="descripcion-breve">Los procesos de trabajo de BIM arquitectónico suelen incluir los siguientes
+                pasos:</p>
+            <div class="informacion-adicional">
+                <ul>
+                    <li>Modelado del Diseño: Creación de modelos 3D precisos que reflejen el diseño conceptual.</li>
+                    <li>Colaboración Interdisciplinaria: Integrar estructuras, sistemas MEP, etc., en el modelo.</li>
+                    <li>Análisis y Simulación: Evaluar el rendimiento energético, el flujo de trabajo y más.</li>
+                    <li>Detección de Conflictos: Identificar y resolver interferencias entre disciplinas.</li>
+                    <li>Documentación: Generar planos detallados y listas de materiales.</li>
+                    <li>Gestión del Proyecto: Seguimiento y actualización del progreso del proyecto en tiempo real.</li>
+                </ul>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="banner">
+    <h1>MEP</h1>
+</div>
+
+
+<div class="contenedor-tarjetas">
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta" #tarjeta1 (click)="toggleInfo(tarjeta1)">
+        <div class="contenido-texto">
+            <h2>Cuales son los beneficios de implementar MEP en tus proyectos</h2>
+            <p class="descripcion-breve">Implementar MEP en tus proyectos ofrece una serie de
+                beneficios clave.</p>
+            <div class="informacion-adicional">
+                <p>permite a los profesionales
+                    agilizar el flujo de trabajo de
+                    diseño y construcción
+                    conectando diseño, detalles,
+                    documentos, análisis estructural,
+                    cálculos de componentes,
+                    simulación 4D, coordinación y
+                    fabricación, etc.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta" #tarjeta2 (click)="toggleInfo(tarjeta2)">
+        <div class="contenido-texto">
+            <h2>Lo que ofrecemos</h2>
+            <p class="descripcion-breve">Nuestros servicios de modelado
+                estructural brindan un nivel de
+                detalle BIM LOD 400 o un nivel
+                de detalle de dibujo de taller,</p>
+            <div class="informacion-adicional">
+                <p>por
+                    lo que los diseñadores y
+                    contratistas estructurales
+                    pueden extraer los dibujos
+                    estructurales del modelo BIM
+                    para un proceso de fabricación
+                    eficiente en el sitio.</p>
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta" #tarjeta3 (click)="toggleInfo(tarjeta3)">
+        <div class="contenido-texto">
+            <h2>Procesos de trabajo</h2>
+            <p class="descripcion-breve">Nuestro equipo colabora estrechamente con los clientes</p>
+            <div class="informacion-adicional">
+                <p>Nuestro modelo BIM estructural
+                    contiene información detallada y
+                    precisa de los componentes
+                    estructurales del edificio, como
+                    cimientos, vigas de nivel,
+                    columnas, muros de carga, losas,
+                    forjados y soportes de piso y
+                    techo, etc.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>

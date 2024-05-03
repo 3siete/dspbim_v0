@@ -1,0 +1,115 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../../../assets/carrucel1.jpg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    margin-bottom: 100px;
+}
+
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.informacion-adicional {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 640px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.contenido-texto {
+    text-align: center;
+    padding: 15px;
+}
+
+.contenido-texto h2 {
+    font-size: 5vw;
+}
+
+.contenido-texto p {
+    font-size: 3.5vw;
+}
+
+.contenido-texto ul,
+li {
+    text-align: left;
+    width: 300px;
+}
+
+.ver-mas {
+    font-size: 3.5vw;
+    color: #98694c;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.ver-mas:hover {
+    color: #8d5f43;
+}
+
+@media (min-width: 768px) {
+    .tarjeta {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenedor-imagen {
+        flex: 0 0 250px;
+    }
+
+    .contenido-texto {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenido-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .contenido-texto p,
+    .ver-mas {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido-texto h2 {
+        font-size: 6vw;
+    }
+
+    .contenido-texto p,
+    .ver-mas {
+        font-size: 4vw;
+    }
+}
