@@ -16,6 +16,7 @@
 
 .logo img {
     max-width: 40px;
+    object-fit: contain;
     margin-right: 0.5rem;
 }
 
@@ -25,6 +26,8 @@
     color: #fff;
     text-decoration: none;
     max-width: 80%;
+    margin-top: 10px;
+    line-height: 12px;
 }
 
 .navbar {

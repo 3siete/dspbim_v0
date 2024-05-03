@@ -8,6 +8,15 @@
     margin-bottom: 100px;
 }
 
+.fade-in-text {
+    animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .banner h1 {
     font-size: 30px;
     font-weight: 300;
