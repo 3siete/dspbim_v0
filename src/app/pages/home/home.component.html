@@ -1,68 +1,56 @@
 <app-home-slider />
-<div class="content 1">
-    <div class="line"></div>
-    <div class="text">
-        <h3>Que es BIM?</h3>
-        <p>
-            BIM (Modelado de Información de Construcción) es una metodología de
-            trabajo que utiliza modelos digitales 3D para planificar, diseñar,
-            construir y administrar edificios e infraestructuras. Permite una
-            colaboración eficiente entre profesionales, mejora la precisión y optimiza
-            la gestión de proyectos de construcción.
-        </p>
+<div class="container">
+    <div class="section">
+        <h2>¿Qué es BIM?</h2>
+        <p>BIM (Modelado de Información de Construcción) es una metodología de trabajo que utiliza modelos digitales 3D
+            para planificar, diseñar, construir y administrar edificios e infraestructuras. Permite la colaboración
+            eficiente entre profesionales, mejora la precisión y optimiza la gestión de proyectos de construcción.</p>
+        <img src="../../../assets/content1.png" alt="Edificio en construcción">
     </div>
-    <img src="../../../assets/content1.png" alt="Diseño de departamentos" />
-</div>
 
-<div class="content second">
-    <div class="line"></div>
-    <div class="text">
-        <h3>¿Porque DSPBIM tiene que formar parte de tis proyectos?</h3>
+    <div class="section">
+        <h2>Nuestro Enfoque BIM</h2>
+        <p>En DSP BIM, somos pioneros en ofrecer soluciones de Diseño BIM. Nuestro equipo combina experiencia técnica y
+            creatividad para transformar ideas en realidad, asegurando eficiencia y precisión en cada proyecto.</p>
+        <p>Nos dedicamos a modelar, diseñar y optimizar espacios con la más avanzada tecnología BIM.</p>
+        <img src="../../../assets/carrucel4.5.jpg" alt="Casa modelo">
+    </div>
+
+    <!-- Nuevo contenido -->
+    <div class="section">
+        <h2>¿Por qué DSPBIM tiene que formar parte de tus proyectos?</h2>
         <ul>
-            <li>
-                A partir de los modelos 3d logramos mayor llegar a un nivel altamente detallado que trae numerosas
-                ventajas en términos de eficiencia y precisión.
-            </li>
-            <li>
-                Agilizamos el flujo de trabajo entre los diferentes actores en la conformación de un proyecto
-                multidisciplinar
-            </li>
-            <li>
-                Podemos gestionar y organizar toda la información del proyecto. Desde la documentación técnica
-                hasta los datos relacionados con los materiales y las especificaciones.
-            </li>
-            <li>
-                Tenemos la capacidad para generar visualizaciones realistas y precisas.
-            </li>
-            <li>A traves de la cordinación de diciplinas se minimizan los errores de construcción y ahorra recursos
-                económicos.
-            </li>
+            <li>A partir de los modelos 3D logramos mayor llegar a un nivel altamente detallado que trae numerosas
+                ventajas en términos de eficiencia y precisión.</li>
+            <li>Agilizamos el flujo de trabajo entre los diferentes actores en la conformación de un proyecto
+                multidisciplinar.</li>
+            <li>Podemos gestionar y organizar toda la información del proyecto. Desde la documentación técnica hasta los
+                datos relacionados con los materiales y las especificaciones.</li>
+            <li>Tenemos la capacidad para generar visualizaciones realistas y precisas.</li>
+            <li>A través de la coordinación de disciplinas se minimizan los errores de construcción y ahorra recursos
+                económicos.</li>
         </ul>
-
-        <a routerLink="nosotros">Mas sobre nosotros</a>
+        <a href="nosotros">Más sobre nosotros</a>
+        <img src="../../../assets/carrucel5.jpg" alt="Diseño de departamentos">
     </div>
-    <img src="../../../assets/carrucel3.png" alt="Diseño de departamentos" />
 </div>
 
-<div class="services-conteiner">
-    <div class="services">
+<div class="main">
+    <h1>Servicios</h1>
+    <ul class="cards">
         @for(service of services; track service; ){
-        <div class="card-container">
+        <li class="cards_item">
             <div class="card">
-                <div class="front-content">
-                    <div class="service">
-                        <p>Servicio</p>
-                        <p>{{ service.number }}</p>
-                    </div>
-                    <img src="../../../assets/services.png" alt="" />
+                <div class="card_image">
+                    <img [src]="service.imagenUrl" alt="{{ service.name }}">
                 </div>
-                <div class="content">
-                    <p class="heading">{{ service.name }}</p>
-                    <p>{{ service.description }}</p>
-                    <a [routerLink]="service.src" class="service-link">conocer mas</a>
+                <div class="card_content">
+                    <h2 class="card_title">{{ service.name }}</h2>
+                    <p class="card_text">{{ service.description }}</p>
+                    <a [routerLink]="service.src" class="btn card_btn">Conocer más</a>
                 </div>
             </div>
-        </div>
+        </li>
         }
-    </div>
+    </ul>
 </div>

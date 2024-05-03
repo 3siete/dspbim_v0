@@ -1,0 +1,82 @@
+<div class="banner">
+    <h1>Deteccion de Conflictos</h1>
+</div>
+
+
+<div class="contenedor-tarjetas">
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta" #tarjeta1 (click)="toggleInfo(tarjeta1)">
+        <div class="contenido-texto">
+            <h2>Cuales son los beneficios de implementar una Deteccion de Conflictos en tus proyectos</h2>
+            <p class="descripcion-breve">Implementar una Deteccion de Conflictos en tus proyectos ofrece una serie de
+                beneficios clave.</p>
+            <div class="informacion-adicional">
+                <p>ayudan a los contratistas MEP, consultores
+                    MEP y coordinadores MEP a mejorar la
+                    coordinación y colaboración entre las
+                    diferentes partes interesadas involucradas
+                    en el proyecto, como diseñadores,
+                    contratistas generales y
+                    contratistas/subcontratistas comerciales.
+                    etc.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta" #tarjeta2 (click)="toggleInfo(tarjeta2)">
+        <div class="contenido-texto">
+            <h2>Lo que ofrecemos</h2>
+            <p class="descripcion-breve">Ofrecemos dibujo BIM Revit graficando conceptos de diseño arquitectónico,
+                estructural y MEP en planos 2D
+                y modelos 3D detallados y más precisos para las diferentes etapas de un proyecto.</p>
+            <div class="informacion-adicional">
+                <ul>
+                    <li>Creación de idea.</li>
+                    <li>Presentaciones ante entes reguladores.</li>
+                    <li>Documentaciones ejecutivas.</li>
+                </ul>
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta" #tarjeta3 (click)="toggleInfo(tarjeta3)">
+        <div class="contenido-texto">
+            <h2>Procesos de trabajo</h2>
+            <p class="descripcion-breve">Nuestro equipo colabora estrechamente con los clientes</p>
+            <div class="informacion-adicional">
+                <p>Nuestros servicios de detección de
+                    conflictos MEP identifican conflictos MEP
+                    con otras disciplinas de la construcción</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="tarjeta" #tarjeta4 (click)="toggleInfo(tarjeta4)">
+        <div class="contenido-texto">
+            <h2>Software</h2>
+            <p class="descripcion-breve">Herramientas o programas utilizados</p>
+            <div class="informacion-adicional">
+                <ul class="cont">
+                    <li>Revit</li>
+                    <li>AutoCAD</li>
+                </ul>
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>

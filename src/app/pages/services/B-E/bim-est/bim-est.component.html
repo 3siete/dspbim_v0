@@ -1,0 +1,80 @@
+<div class="banner">
+    <h1>BIM Estructural</h1>
+</div>
+
+
+<div class="contenedor-tarjetas">
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta" #tarjeta1 (click)="toggleInfo(tarjeta1)">
+        <div class="contenido-texto">
+            <h2>Cuales son los beneficios de implementar una Documentacion Ejecutiva en tus proyectos</h2>
+            <p class="descripcion-breve">Implementar BIM Estructural en los proyectos aporta diversos beneficios
+                significativos.</p>
+            <div class="informacion-adicional">
+                <p>Permite una mayor precisión en el diseño, ya que los modelos 3D detallados ayudan a visualizar y
+                    planificar estructuras complejas. Facilita la detección temprana de conflictos, al integrar el
+                    diseño estructural con otras disciplinas, lo que evita problemas costosos durante la construcción.
+                    Además, optimiza el uso de materiales al calcular las cantidades necesarias con precisión,
+                    minimizando el desperdicio. Las simulaciones y análisis previos también permiten predecir el
+                    comportamiento estructural y garantizar la seguridad antes de la construcción.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta" #tarjeta2 (click)="toggleInfo(tarjeta2)">
+        <div class="contenido-texto">
+            <h2>Lo que ofrecemos</h2>
+            <p class="descripcion-breve">Modelado estructural que le
+                permite a los profesionales
+                agilizar el flujo de trabajo de
+                diseño y construcción
+                conectando diseño, detalles,
+                documentos, análisis estructural,
+                cálculos de componentes,
+                simulación 4D, coordinación y
+                fabricación, etc.</p>
+            <div class="informacion-adicional">
+                <p>Nuestro modelo BIM estructural
+                    contiene información detallada y
+                    precisa de los componentes
+                    estructurales del edificio, como
+                    cimientos, vigas de nivel,
+                    columnas, muros de carga, losas,
+                    forjados y soportes de piso y
+                    techo, etc.</p>
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta" #tarjeta3 (click)="toggleInfo(tarjeta3)">
+        <div class="contenido-texto">
+            <h2>Procesos de trabajo</h2>
+            <p class="descripcion-breve">Nuestro equipo colabora estrechamente con los clientes</p>
+            <div class="informacion-adicional">
+                <p>Nuestros servicios de modelado
+                    estructural brindan un nivel de
+                    detalle BIM LOD 400 o un nivel
+                    de detalle de dibujo de taller, por
+                    lo que los diseñadores y
+                    contratistas estructurales
+                    pueden extraer los dibujos
+                    estructurales del modelo BIM
+                    para un proceso de fabricación
+                    eficiente en el sitio.</p>
+                <!-- Agrega más contenido aquí según sea necesario -->
+            </div>
+            <div class="ver-mas" onclick="toggleInfo(this.parentElement)">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>
