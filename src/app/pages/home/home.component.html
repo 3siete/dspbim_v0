@@ -1,0 +1,69 @@
+<app-home-slider />
+<div class="content 1">
+    <div class="line"></div>
+    <div class="text">
+
+        <h3>Que es BIM?</h3>
+        <p>
+            BIM (Modelado de Información de Construcción) es una metodología de
+            trabajo que utiliza modelos digitales 3D para planificar, diseñar,
+            construir y administrar edificios e infraestructuras. Permite una
+            colaboración eficiente entre profesionales, mejora la precisión y optimiza
+            la gestión de proyectos de construcción.
+        </p>
+    </div>
+    <img src="../../../assets/content1.png" alt="Diseño de departamentos" />
+</div>
+
+<div class="content second">
+    <div class="line"></div>
+    <div class="text">
+        <h3>¿Porque DSPBIM tiene que formar parte de tis proyectos?</h3>
+        <ul>
+            <li>
+                A partir de los modelos 3d logramos mayor llegar a un nivel altamente detallado que trae numerosas
+                ventajas en términos de eficiencia y precisión.
+            </li>
+            <li>
+                Agilizamos el flujo de trabajo entre los diferentes actores en la conformación de un proyecto
+                multidisciplinar
+            </li>
+            <li>
+                Podemos gestionar y organizar toda la información del proyecto. Desde la documentación técnica
+                hasta los datos relacionados con los materiales y las especificaciones.
+            </li>
+            <li>
+                Tenemos la capacidad para generar visualizaciones realistas y precisas.
+            </li>
+            <li>A traves de la cordinación de diciplinas se minimizan los errores de construcción y ahorra recursos
+                económicos.
+            </li>
+        </ul>
+
+        <a routerLink="nosotros">Mas sobre nosotros</a>
+    </div>
+    <img src="../../../assets/carrucel3.png" alt="Diseño de departamentos" />
+</div>
+
+<div class="services-conteiner">
+    <div class="services">
+        @for(service of services; track service; ){
+        <div class="card-container">
+            <div class="card">
+                <div class="front-content">
+                    <div class="service">
+                        <p>Servicio</p>
+                        <p>{{ service.number }}</p>
+                    </div>
+                    <img src="../../../assets/services.png" alt="" />
+                </div>
+                <div class="content">
+                    <p class="heading">{{ service.name }}</p>
+                    <p>{{ service.description }}</p>
+                    <a [routerLink]="service.src" class="service-link">conocer mas</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

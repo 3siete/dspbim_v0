@@ -1,0 +1,131 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/carrucel3.jpg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    margin-bottom: 100px;
+}
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.fade-in-text {
+    animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* TARJETAS */
+
+
+
+/* Estilos base para las tarjetas */
+.card-body {
+    position: relative;
+    height: 400px;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-title {
+    position: relative;
+    /* Hace que el texto aparezca sobre la imagen */
+    z-index: 1;
+}
+
+.card-text {
+    position: relative;
+    /* Hace que el texto aparezca sobre la imagen */
+    z-index: 1;
+}
+
+.card-img-top {
+    width: 100%;
+    /* Asegúrate de que la imagen se estire para cubrir todo el ancho */
+    height: auto;
+    /* Mantén la proporción de aspecto de la imagen */
+    position: absolute;
+    /* Posición absoluta */
+    z-index: -1;
+    /* Pone la imagen detrás del texto */
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el carrusel */
+.carousel-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Controla la cantidad de tarjetas por fila según el tamaño de pantalla */
+@media (min-width: 320px) {
+    .card {
+        height: 150px;
+    }
+
+    /* Pantallas pequeñas (sm) */
+    .carousel-item .card {
+        flex: 0 0 calc(50% - 1rem);
+        /* Dos tarjetas por fila, restamos margin */
+    }
+}
+
+@media (min-width: 576px) {
+    .card {
+        height: 200px;
+    }
+
+    /* Pantallas pequeñas (sm) */
+    .carousel-item .card {
+        flex: 0 0 calc(50% - 1rem);
+        /* Dos tarjetas por fila, restamos margin */
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 250px;
+    }
+
+    /* Pantallas medianas (md) */
+    .carousel-item .card {
+        flex: 0 0 calc(33.333% - 1rem);
+        /* Tres tarjetas por fila */
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Pantallas grandes (lg) */
+    .carousel-item .card {
+        flex: 0 0 calc(25% - 1rem);
+        /* Cuatro tarjetas por fila */
+    }
+}
+
+/* Contenedor del carrusel */
+.carousel-inner {
+    margin: auto;
+    width: 100%;
+}
+
+/* Controles del carrusel (flechas) para que estén centrados verticalmente */
+.carousel-control-prev,
+.carousel-control-next {
+    align-self: center;
+}

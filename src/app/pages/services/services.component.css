@@ -1,0 +1,91 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/carrucel1.jpg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+h3 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+li {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 50rem;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+.services-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.name {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name .line {
+    content: "";
+    left: 60px;
+    width: 25rem;
+    height: 2px;
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+.spacer {
+    width: 25rem;
+}
+
+
+.benefits {
+    margin: 30px 0 30px 0;
+}
+
+.offers {
+    margin: 30px 0 30px 0;
+}
+
+.processes {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.tool-used {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.content {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content li {
+    margin: 0 5px;
+}

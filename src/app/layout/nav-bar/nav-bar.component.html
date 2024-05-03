@@ -1,0 +1,18 @@
+<div class="header">
+    <div class="fa-solid fa-bars" id="menu-icon" (click)="isActive = !isActive" [ngClass]="{ 'fa-xmark' : isActive}">
+    </div>
+    <div class="logo">
+        <img src="../../../assets/dsplogo.png" alt="Logo DSPBIM"/>
+        <div class="text">
+            <h4>DSP</h4>
+            <h4>BIM</h4>
+        </div>
+    </div>
+    <nav class="navbar" [ngClass]="{ 'open' : isActive}">
+        <a routerLink="/">Inicio</a>
+        <a routerLink="/nosotros">Nosotros</a>
+        <a routerLink="/proyectos">Proyectos</a>
+        <a routerLink="/contacto">Contacto</a>
+    </nav>
+
+</div>

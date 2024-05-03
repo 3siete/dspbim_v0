@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #292929;
+    /* Color primario */
+    --secondary-color: #98694C;
+    /* Color secundario */
+    --contrast-color: #0D0016;
+    /* Color de contraste */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #F2E9DF;
+}

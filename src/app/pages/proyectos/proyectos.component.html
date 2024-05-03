@@ -1,0 +1,32 @@
+<div class="banner">
+    <div class="fade-in-text">
+    <h1>Proyectos</h1>
+</div>
+</div>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let proyecto of proyectos; let i = index" [class.active]="i === 0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" [routerLink]="['/proyecto', proyecto.id]">
+                            <img [src]="proyecto.imagenUrl" class="card-img-top" *ngIf="proyecto.imagenUrl">
+
+                            <div class="card-body">
+                                <h5 class="card-title">{{ proyecto.nombre }}</h5>
+                                <p class="card-text">{{ proyecto.introduccion }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>

@@ -1,0 +1,287 @@
+.banner {
+    height: 100dvh;
+    position: relative;
+    background: url(../../../assets/elsapato2.svg) no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    width: 100%;
+
+}
+
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.banner h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*DSÑKFJ{ÑLK{ÑDKLASFÑKASÑDFKÑLASKDFÑKSÑDFÑLASKDFÑLKASÑDFKÑKLASDFÑKÑSDKÑF*/
+
+
+
+.boxesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cardBox {
+    float: left;
+    font-size: 0.8em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    background: #F2E9DF;
+    cursor: default;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card p {
+    margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: #1E2123;
+    display: flex;
+    font-size: 1.2em;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+
+
+.cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .boxesContainer {
+        display: block;
+        /* Cambio a display block para apilar los elementos */
+    }
+
+    .cardBox {
+        width: 94%;
+        /* Ajusta este valor según necesites */
+        margin: 10px auto;
+        /* Centra las tarjetas y añade un poco de margen entre ellas */
+        float: none;
+        /* Anula el float de los .cardBox */
+    }
+
+    .card {
+        height: 285px;
+        /* Puedes ajustar la altura según necesites */
+    }
+
+    /* Elimina margin-bottom del último .cardBox si es necesario */
+    .cardBox:last-child {
+        margin-bottom: 10px;
+        /* Ajusta según necesites */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardBox {
+        width: 94.5%;
+    }
+
+    .card {
+        height: 260px;
+    }
+}
+
+/*perfiles*/
+.informacion-adicional {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 640px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-imagen {
+    width: 100%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenido-texto {
+    padding: 15px;
+}
+
+.contenido-texto h2 {
+    font-size: 5vw;
+}
+
+.contenido-texto p {
+    font-size: 3.5vw;
+}
+
+.ver-mas {
+    font-size: 3.5vw;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.ver-mas:hover {
+    color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .tarjeta {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenedor-imagen {
+        flex: 0 0 250px;
+    }
+
+    .contenido-texto {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenido-texto h2,
+    .contenido-texto p,
+    .ver-mas {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido-texto h2 {
+        font-size: 6vw;
+    }
+
+    .contenido-texto p,
+    .ver-mas {
+        font-size: 4vw;
+    }
+}

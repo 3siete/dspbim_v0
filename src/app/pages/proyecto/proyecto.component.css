@@ -1,0 +1,77 @@
+.fondo {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #292929;
+}
+
+.project-detail-container {
+    display: flex;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    width: 53%;
+    margin: auto;
+    transform: translateY(160px);
+    /* ajusta 20px al valor que necesites */
+}
+
+.project-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    height: 600px;
+}
+
+/* Agregar a la clase que tiene tu contenido actual */
+.content-animation {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    /* Inicialmente visible */
+}
+
+/* Clase que se añadirá dinámicamente para iniciar la animación */
+.content-hidden {
+    opacity: 0;
+    /* Hace el contenido completamente transparente */
+}
+
+
+.project-info {
+    padding: 20px;
+    width: 40%;
+    background-color: #d9a571;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 10px 10px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.project-description {
+    flex-grow: 1;
+    width: auto;
+    padding: 20px;
+    /* Asegura que el contenido ocupe el espacio disponible */
+}
+
+.project-navigation {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el botón a la derecha */
+}
+
+.project-navigation a {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* Ajusta para FontAwesome o tu imagen específica */
+.project-navigation i {
+    transition: color 0.3s;
+}
+
+.project-navigation button:hover i {
+    color: #fff;
+    /* Cambia el color al pasar el ratón */
+}
