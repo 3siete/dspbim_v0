@@ -10,8 +10,6 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card" [routerLink]="['/proyecto', proyecto.id]">
-                            <img [src]="proyecto.imagenUrl" class="card-img-top" *ngIf="proyecto.imagenUrl">
-
                             <div class="card-body">
                                 <h5 class="card-title">{{ proyecto.nombre }}</h5>
                                 <p class="card-text">{{ proyecto.introduccion }}</p>

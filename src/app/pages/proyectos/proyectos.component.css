@@ -10,12 +10,17 @@
 
 .fade-in-text {
     animation: fadeIn 5s;
-  }
+}
 
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .banner h1 {
     font-size: 30px;
@@ -33,6 +38,8 @@
     margin: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
+    background-color: #292929;
+    color: #fff;
 }
 
 .card-title {
