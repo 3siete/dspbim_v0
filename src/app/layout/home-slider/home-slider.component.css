@@ -152,25 +152,7 @@ main {
 
 @media (min-width: 651px) and (max-width: 1024px) {
     .title {
-        display: flex;
-        position: absolute;
-        top: 20%;
-        left: auto;
-        z-index: 1000;
-    }
-
-    .title h2 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-        color: #fff;
-    }
-
-    .title h1 {
-        margin-left: 4px;
-        margin-top: -35px;
-        font-size: 100px;
-        font-weight: 700;
+        display: none;
     }
 
 

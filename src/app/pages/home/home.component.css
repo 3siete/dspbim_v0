@@ -194,10 +194,18 @@ h1 {
     .cards_item {
         flex-basis: calc(50% - 15px);
     }
+
+    .card {
+        width: 275px;
+    }
 }
 
 @media (max-width: 480px) {
     .cards_item {
         flex-basis: 100%;
+    }
+
+    .card {
+        width: 250px;
     }
 }
