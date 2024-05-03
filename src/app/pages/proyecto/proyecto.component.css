@@ -51,14 +51,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+    /* Oculta el contenido que sobrepasa */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos al final */
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    /* Rompe las palabras largas */
+    white-space: normal;
+    /* Asegura que el texto fluya correctamente */
     border-radius: 0 10px 10px 0;
     box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
     /* Añade una sombra */
 }
 
 .project-description {
+    overflow: hidden;
+    /* Oculta el contenido que sobrepasa */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos al final */
+    word-wrap: break-word;
+    /* Rompe las palabras largas */
+    white-space: normal;
+    /* Asegura que el texto fluya correctamente */
     flex-grow: 1;
     padding: 15px;
     /* Reduce el padding para mantenerlo compacto */

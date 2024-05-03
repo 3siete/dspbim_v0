@@ -1,8 +1,11 @@
 .banner {
-    height: 100dvh;
+    height: 100vh;
+    /* Altura completa del viewport */
     position: relative;
-    background: url(../../../assets/elsapato2.svg) no-repeat center;
+    background: url(../../../assets/donfo.jpg) no-repeat center center;
+    /* Asegura que la imagen esté centrada */
     background-size: cover;
+    /* Contiene la imagen dentro del contenedor sin cortar */
     display: grid;
     place-content: center;
     width: 100%;
@@ -160,6 +163,13 @@
 }
 
 @media screen and (max-width: 767px) {
+    .banner {
+        background-size: cover;
+        /* Cambia a cubrir para pantallas pequeñas */
+        height: 80vh;
+        /* Ajusta la altura para pantallas más pequeñas */
+    }
+
     .boxesContainer {
         display: block;
         /* Cambio a display block para apilar los elementos */
@@ -187,6 +197,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .banner {
+        background-size: cover;
+        /* Cambia a cubrir para pantallas pequeñas */
+        height: 50vh;
+        /* Ajusta la altura para pantallas más pequeñas */
+    }
+
     .cardBox {
         width: 94.5%;
     }
