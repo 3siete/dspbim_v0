@@ -17,7 +17,7 @@ export class HomeComponent {
       description:
         'Dibujos, planos y documentos técnicos a partir de Modelos BIM',
       src: 'D-E',
-      imagenUrl: 'assets/1.svg',
+      imagenUrl: 'assets/iconos/1.svg',
     },
     {
       number: 'n2',
@@ -25,7 +25,7 @@ export class HomeComponent {
       description:
         'Modelado Arquitectónico a partir de documentación 2D a 3D BIM',
       src: 'B-A',
-      imagenUrl: 'assets/2.svg',
+      imagenUrl: 'assets/iconos/2.svg',
     },
     {
       number: 'n3',
@@ -33,7 +33,7 @@ export class HomeComponent {
       description:
         'Modelado Estructural 3D BIM a partir de archivos IFC del departamento de ingeniería.',
       src: 'B-E',
-      imagenUrl: 'assets/3.svg',
+      imagenUrl: 'assets/iconos/3.svg',
     },
     {
       number: 'n4',
@@ -41,7 +41,7 @@ export class HomeComponent {
       description:
         'Modelado de instalaciones, cordinación con todas las diciplinas y documentación ejecutiva.',
       src: 'MEP',
-      imagenUrl: 'assets/4.svg',
+      imagenUrl: 'assets/iconos/4.svg',
     },
     {
       number: 'n5',
@@ -49,7 +49,7 @@ export class HomeComponent {
       description:
         'Detección de interferencias interdisciplinarias (Arquitectónico, Estructural, MEP y otros) con informes para solucionar a través del diseño la mejor solución.',
       src: 'D-C',
-      imagenUrl: 'assets/5.svg',
+      imagenUrl: 'assets/iconos/5.svg',
     },
     {
       number: 'n6',
@@ -57,7 +57,7 @@ export class HomeComponent {
       description:
         'Dibujos, planos y documentos técnicos de lo realmente ejecutado a traves de escaneo 3D',
       src: 'A-B',
-      imagenUrl: 'assets/6.svg',
+      imagenUrl: 'assets/iconos/6.svg',
     },
   ];
 }

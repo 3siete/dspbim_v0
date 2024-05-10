@@ -62,7 +62,7 @@
 }
 
 .card {
-    background: #F2E9DF;
+    background: #fff;
     cursor: default;
     height: 500px;
     transform-style: preserve-3d;
@@ -72,7 +72,7 @@
     animation: giro 1s 1;
     align-items: center;
     justify-content: center;
-    border-color: #F2E9DF;
+    border-color: #fff;
 
 }
 
