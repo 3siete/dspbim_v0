@@ -39,7 +39,7 @@
     margin-top: -20px;
     font-size: 140px;
     font-weight: 700;
-    line-height: 164px;
+    line-height: 130px;
     color: #fff;
 }
 
@@ -155,12 +155,16 @@ main {
     cursor: pointer;
 }
 
-
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .title {
+        left: 6.50rem;   
+    }
+}
 
 
 @media (min-width: 651px) and (max-width: 1024px) {
     .title {
-        left: -1px;
+        display: none;
     }
 
 
@@ -206,12 +210,12 @@ main {
     }
 
     .title {
-        left: -1px;
+        display: none;
     }
 
     .item {
         width: 130px;
-        height: 0px;
+        height: 220px;
 
         &:nth-child(3) {
             left: 65%;

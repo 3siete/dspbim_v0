@@ -9,6 +9,13 @@
     z-index: 99999999;
 }
 
+.text {
+    position: absolute;
+    right: 4rem; 
+    color: #fff;
+    
+}
+
 .logo {
     display: flex;
     margin-right: 3rem;
@@ -31,12 +38,12 @@
 }
 
 .navbar {
-    margin-left: 6rem;
+    margin-left: 13rem;
 }
 
 .navbar a {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #fff;
     font-weight: 200;
     text-decoration: none;
@@ -69,13 +76,13 @@
 
 @media (max-width: 1280px) {
     .header {
-        justify-content: space-between;
         padding: 14px 6%;
         transition: .2s;
     }
 
     .navbar {
-        margin-left: auto;
+        margin-left: 7rem;
+
     }
 
     .navbar a {
