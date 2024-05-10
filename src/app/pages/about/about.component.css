@@ -248,12 +248,37 @@
 
 .contenedor-imagen {
     width: 100%;
+    /* Ajusta este valor si necesitas un ancho específico */
+    height: 250px;
+    /* Altura fija para el contenedor de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra la imagen verticalmente */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    overflow: hidden;
+    /* Asegura que el pseudo-elemento no se desborde */
 }
 
 .contenedor-imagen img {
-    width: 100%;
+    width: 60%;
+    /* Reducir el ancho de la imagen al 80% del contenedor */
     height: auto;
-    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
+    object-fit: contain;
+}
+
+.contenedor-imagen::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    /* Altura del gradiente */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 15%, #ffffff 95%);
+    /* Gradiente de transparente a blanco */
 }
 
 .contenido-texto {
