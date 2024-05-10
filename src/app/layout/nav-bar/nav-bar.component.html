@@ -9,9 +9,9 @@
         </div>
     </div>
     <nav class="navbar" [ngClass]="{ 'open' : isActive}">
-        <a routerLink="/">Inicio</a>
-        <a routerLink="/nosotros">Nosotros</a>
-        <a routerLink="/proyectos">Proyectos</a>
-        <a routerLink="/contacto">Contacto</a>
+        <a routerLink="/" (click)="toggleNavbar()">Inicio</a>
+        <a routerLink="/nosotros" (click)="toggleNavbar()">Nosotros</a>
+        <a routerLink="/proyectos" (click)="toggleNavbar()">Proyectos</a>
+        <a routerLink="/contacto" (click)="toggleNavbar()">Contacto</a>
     </nav>
 </div>

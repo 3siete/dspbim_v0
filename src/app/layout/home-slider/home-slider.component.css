@@ -160,7 +160,7 @@ main {
 
 @media (min-width: 651px) and (max-width: 1024px) {
     .title {
-        display: none;
+        left: -1px;
     }
 
 
@@ -206,12 +206,12 @@ main {
     }
 
     .title {
-        display: none;
+        left: -1px;
     }
 
     .item {
         width: 130px;
-        height: 220px;
+        height: 0px;
 
         &:nth-child(3) {
             left: 65%;
