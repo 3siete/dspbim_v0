@@ -86,6 +86,7 @@ export class ProyectoComponent implements OnInit {
         this.indiceDetalleActual =
           (this.indiceDetalleActual + 1) % this.detalles.length;
           console.log(this.indiceDetalleActual)
+          console.log("Este es el proyecto actual?", this.proyecto)
 
         this.tituloActual = this.getTitulo(
           this.detalles[this.indiceDetalleActual]
