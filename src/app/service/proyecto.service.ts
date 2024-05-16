@@ -75,7 +75,7 @@ export class ProyectoService {
       LOD: '350',
       area: '137,22 m² ',
       imagenUrl: 'assets/carrucel4.5.jpg',
-    },
+    }
     
   ];
 
