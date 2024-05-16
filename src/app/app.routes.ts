@@ -54,7 +54,7 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'A-S',
+    path: 'A-B',
     loadComponent: () =>
       import('./pages/services/A-B/as-built/as-built.component').then(
         (c) => c.AsBuiltComponent

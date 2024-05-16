@@ -47,7 +47,7 @@ export class HomeComponent {
       number: 'n5',
       name: 'Detección de conflictos',
       description:
-        'Detección de interferencias interdisciplinarias (Arquitectónico, Estructural, MEP y otros) con informes para solucionar a través del diseño la mejor solución.',
+        'Detección de interferencias interdisciplinarias (Arquitectónico, Estructural, MEP y otros) con informes para solucionar a través del diseño la mejor solución. (En Proceso)',
       src: 'D-C',
       imagenUrl: 'assets/iconos/5.svg',
     },

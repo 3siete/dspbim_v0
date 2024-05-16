@@ -12,9 +12,9 @@ export class ProyectoService {
       id: 1,
       nombre: 'LAB',
       introduccion:
-        'askjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjans',
+        'Proyecto arquitectónico de oficinas y laboratorio ortopédico. Remodelación y ampliación',
       descripcion:
-        'asjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhas ioudhasiouhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhdhdhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhd hdhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhd',
+        'El proyecto cumple con el desafio de remodelar un galpón existente, para que funcione un laboratorio ortopedico. Se amplia superficie nueva con oficinas anexas. El sistema de construcción que resuelva el proyecto es el tradicional. ',
       servicios: 'asdasdnkjansd aksjndkajnsdkajnsd akjsndkajnsdkjand',
       LOD: '250',
       area: '1500m2',
