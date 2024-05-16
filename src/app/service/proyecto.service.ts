@@ -10,17 +10,20 @@ export class ProyectoService {
   private proyectos: Proyecto[] = [
     {
       id: 1,
-      nombre: 'LAB',
+      nombre: 'SMS',
       introduccion:
-        'askjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjansaskjdnkajsndkjansdkjansdkjnaskjdnasjkdnakjsdnkjandjskandksjndkjans',
+        'Proyecto Arquitectónico de locales comerciales. Obra nueva',
       descripcion:
-        'asjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhasasjindiaushdiouhas ioudhasiouhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhdhdhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhd hdhdhdhdhdhdhdhdhdhd hdhdhdhdhdh dhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhdhd',
-      servicios: 'asdasdnkjansd aksjndkajnsdkajnsd akjsndkajnsdkjand',
-      LOD: '250',
-      area: '1500m2',
+        'Este proyecto propone el desarrollo de dos locales comerciales, diseñados para maximizar la funcionalidad y estética mediante la integración de sistemas de construcción modular y tradicional. ',
+      
+      
+      servicios: 'Modelado arquitectónico, Documentacion Arquitectonica, Modelado de estructura, Modelado MEP, Documentación MEP (Sanitaria, desagües, gas, climatización, y eléctricidad)' ,
+
+
+      LOD: '350',
+      area: '137,22 m² ',
       imagenUrl: 'assets/carrucel4.5.jpg',
     },
-    // ... una lista estática de proyectos para el ejemplo
   ];
 
   constructor() {}

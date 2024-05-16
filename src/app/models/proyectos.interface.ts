@@ -6,6 +6,8 @@ export interface Proyecto {
   servicios: string;
   LOD: string;
   area: string;
-  imagenUrl?: string; // El signo de interrogación indica que esta propiedad es opcional
+  imagenUrl?: string;
+  Detalles?: string;
+  // El signo de interrogación indica que esta propiedad es opcional
   // Puedes agregar métodos también, aunque es menos común en interfaces de modelos de datos.
 }

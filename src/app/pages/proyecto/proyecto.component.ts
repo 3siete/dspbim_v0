@@ -18,12 +18,11 @@ export class ProyectoComponent implements OnInit {
   contenidoActual: string = '';
   contentHidden: boolean = false;
   tituloActual: string = 'Introducción'; // Puedes inicializarlo con el primer título
+  informacionJunta: string = '';
   detalles: (keyof Proyecto)[] = [
     'introduccion',
     'descripcion',
-    'servicios',
-    'area',
-    'LOD',
+    'Detalles',
   ];
   indiceDetalleActual: number = 0;
 
@@ -50,8 +49,32 @@ export class ProyectoComponent implements OnInit {
         },
       });
     }
+
+    const id1 = this.route.snapshot.paramMap.get('id');
+    if (id1 !== null) {
+      this.proyectoService.obtenerProyectoPorId(+id1).subscribe({
+        next: (proyecto) => {
+          if (proyecto) {
+            this.proyecto = proyecto;
+  
+            // Concatenar los valores de servicios, LOD y area
+            this.informacionJunta = `${proyecto.servicios}, ${proyecto.LOD}, ${proyecto.area}`;
+  
+            // Establecer el contenido actual con la información concatenada
+            
+          }
+        },
+        error: (err) => {
+          console.error(err);
+          // Manejar el caso de error aquí, por ejemplo, mostrando un mensaje o redireccionando.
+        },
+      });
+    }
+
   }
 
+
+  
   cambiarContenido(): void {
     if (this.proyecto) {
       // Oculta el contenido
@@ -62,6 +85,8 @@ export class ProyectoComponent implements OnInit {
         // Actualiza el contenido
         this.indiceDetalleActual =
           (this.indiceDetalleActual + 1) % this.detalles.length;
+          console.log(this.indiceDetalleActual)
+
         this.tituloActual = this.getTitulo(
           this.detalles[this.indiceDetalleActual]
         );
@@ -85,6 +110,8 @@ export class ProyectoComponent implements OnInit {
     };
     return titulos[detalle] || detalle;
   }
+
+
 
   private setContenidoActual(): void {
     if (this.proyecto) {

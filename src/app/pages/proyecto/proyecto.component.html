@@ -9,6 +9,11 @@
                 <h2>{{ tituloActual }}</h2>
                 <div class="project-description">
                     <p>{{ contenidoActual }}</p>
+                <div *ngIf="indiceDetalleActual === 2">
+                    <p>Servicios:<br>{{this.proyecto.servicios}}</p>
+                    <p>Lod:<br>{{this.proyecto.LOD}}</p>
+                    <p>Area<br>{{this.proyecto.area}}</p>
+                </div>
                 </div>
             </div>
             <div class="project-navigation">
