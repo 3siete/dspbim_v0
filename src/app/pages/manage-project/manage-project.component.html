@@ -1,0 +1,23 @@
+<div class="form-container">
+    <form [formGroup]="projectForm" (ngSubmit)="submitForm()">
+        <label for="nombre">Nombre del Proyecto</label>
+        <input id="nombre" type="text" formControlName="nombre">
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" formControlName="descripcion"></textarea>
+
+        <label for="servicios">Servicios</label>
+        <input id="servicios" type="text" formControlName="servicios">
+
+        <label for="area">Área</label>
+        <input id="area" type="text" formControlName="area">
+
+        <label for="LOD">Nivel de Detalle (LOD)</label>
+        <input id="LOD" type="text" formControlName="LOD">
+
+        <button type="submit" [disabled]="!projectForm.valid">
+            {{ currentProjectId ? 'Actualizar' : 'Crear' }} Proyecto
+        </button>
+        <button type="button" (click)="deleteProject()" *ngIf="currentProjectId">Eliminar Proyecto</button>
+    </form>
+</div>

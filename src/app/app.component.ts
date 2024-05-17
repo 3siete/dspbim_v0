@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { isPlatformBrowser, ViewportScroller } from '@angular/common';
 import { FirebaseModule } from './firebase.module'; // Importa el módulo de Firebase
 import { environment } from './enviroments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { environment } from './enviroments/environment';
     FooterComponent,
     CommonModule,
     FirebaseModule,
+    ReactiveFormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
