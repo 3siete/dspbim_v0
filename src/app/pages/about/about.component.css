@@ -249,7 +249,6 @@
 .contenedor-imagen {
     width: 100%;
     /* Ajusta este valor si necesitas un ancho específico */
-    height: 250px;
     /* Altura fija para el contenedor de la imagen */
     display: flex;
     justify-content: center;
@@ -312,6 +311,14 @@
 
     .contenedor-imagen {
         flex: 0 0 250px;
+    }
+
+    .contenedor-imagen img {
+        width: 60%;
+        /* Reducir el ancho de la imagen al 80% del contenedor */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
+        object-fit: contain;
     }
 
     .contenido-texto {

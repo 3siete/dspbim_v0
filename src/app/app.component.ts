@@ -5,11 +5,19 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { isPlatformBrowser, ViewportScroller } from '@angular/common';
+import { FirebaseModule } from './firebase.module'; // Importa el módulo de Firebase
+import { environment } from './enviroments/environment';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, FooterComponent, CommonModule],
+  imports: [
+    RouterOutlet,
+    NavBarComponent,
+    FooterComponent,
+    CommonModule,
+    FirebaseModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
